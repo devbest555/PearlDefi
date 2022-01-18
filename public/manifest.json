@@ -1,0 +1,16 @@
+{
+  "short_name": "Pearl DeFi",
+  "name": "Pearl DeFi",
+  "description": "Farm PEARL with LP Tokens",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

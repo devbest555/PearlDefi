@@ -1,0 +1,243 @@
+22:17:02.627  	Cloning github.com/PearlDefi/pearl_frontend_v1 (Branch: main, Commit: feb1aeb)
+22:17:03.669  	Cloning completed: 1.042s
+22:17:03.747  	Analyzing source code...
+22:17:04.554  	Installing build runtime...
+22:17:06.405  	Build runtime installed: 1.850s
+22:17:08.430  	Build cache not provided
+22:17:09.284  	Detected package.json
+22:17:09.284  	Installing dependencies...
+22:17:44.386  	> bufferutil@4.0.3 install /vercel/path0/node_modules/bufferutil
+22:17:44.386  	> node-gyp-build
+22:17:44.513  	> secp256k1@4.0.2 install /vercel/path0/node_modules/ethereum-cryptography/node_modules/secp256k1
+22:17:44.513  	> node-gyp-build || exit 0
+22:17:44.644  	> keccak@3.0.1 install /vercel/path0/node_modules/keccak
+22:17:44.644  	> node-gyp-build || exit 0
+22:17:44.878  	> keccak@1.4.0 install /vercel/path0/node_modules/@portis/web3/node_modules/keccak
+22:17:44.878  	> npm run rebuild || echo "Keccak bindings compilation fail. Pure JS implementation will be used."
+22:17:45.095  	> keccak@1.4.0 rebuild /vercel/path0/node_modules/@portis/web3/node_modules/keccak
+22:17:45.095  	> node-gyp rebuild
+22:17:45.895  	make: Entering directory `/vercel/path0/node_modules/@portis/web3/node_modules/keccak/build'
+22:17:45.896  	  CXX(target) Release/obj.target/keccak/src/addon.o
+22:17:46.269  	../src/addon.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE KeccakWrapper::Initialize(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:46.269  	../src/addon.cc:37:47: error: no matching function for call to ‘v8::Value::IntegerValue()’
+22:17:46.269  	     unsigned int rate = info[0]->IntegerValue();
+22:17:46.269  	                                               ^
+22:17:46.269  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:46.269  	                 from ../src/addon.cc:1:
+22:17:46.270  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note: candidate: v8::Maybe<long int> v8::Value::IntegerValue(v8::Local<v8::Context>) const
+22:17:46.270  	   V8_WARN_UNUSED_RESULT Maybe<int64_t> IntegerValue(
+22:17:46.270  	                                        ^~~~~~~~~~~~
+22:17:46.270  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note:   candidate expects 1 argument, 0 provided
+22:17:46.270  	../src/addon.cc:38:51: error: no matching function for call to ‘v8::Value::IntegerValue()’
+22:17:46.270  	     unsigned int capacity = info[1]->IntegerValue();
+22:17:46.270  	                                                   ^
+22:17:46.270  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:46.270  	                 from ../src/addon.cc:1:
+22:17:46.270  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note: candidate: v8::Maybe<long int> v8::Value::IntegerValue(v8::Local<v8::Context>) const
+22:17:46.270  	   V8_WARN_UNUSED_RESULT Maybe<int64_t> IntegerValue(
+22:17:46.270  	                                        ^~~~~~~~~~~~
+22:17:46.270  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note:   candidate expects 1 argument, 0 provided
+22:17:46.270  	../src/addon.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE KeccakWrapper::AbsorbLastFewBits(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:46.270  	../src/addon.cc:56:48: error: no matching function for call to ‘v8::Value::IntegerValue()’
+22:17:46.270  	     unsigned char bits = info[0]->IntegerValue();
+22:17:46.270  	                                                ^
+22:17:46.271  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:46.271  	                 from ../src/addon.cc:1:
+22:17:46.271  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note: candidate: v8::Maybe<long int> v8::Value::IntegerValue(v8::Local<v8::Context>) const
+22:17:46.271  	   V8_WARN_UNUSED_RESULT Maybe<int64_t> IntegerValue(
+22:17:46.271  	                                        ^~~~~~~~~~~~
+22:17:46.271  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note:   candidate expects 1 argument, 0 provided
+22:17:46.271  	../src/addon.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE KeccakWrapper::Squeeze(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:46.271  	../src/addon.cc:64:43: error: no matching function for call to ‘v8::Value::IntegerValue()’
+22:17:46.271  	     size_t length = info[0]->IntegerValue();
+22:17:46.271  	                                           ^
+22:17:46.271  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:46.271  	                 from ../src/addon.cc:1:
+22:17:46.271  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note: candidate: v8::Maybe<long int> v8::Value::IntegerValue(v8::Local<v8::Context>) const
+22:17:46.271  	   V8_WARN_UNUSED_RESULT Maybe<int64_t> IntegerValue(
+22:17:46.271  	                                        ^~~~~~~~~~~~
+22:17:46.271  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2863:40: note:   candidate expects 1 argument, 0 provided
+22:17:46.271  	../src/addon.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE KeccakWrapper::Copy(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:46.271  	../src/addon.cc:75:82: error: no matching function for call to ‘v8::Value::ToObject()’
+22:17:46.271  	     KeccakWrapper* to = Nan::ObjectWrap::Unwrap<KeccakWrapper>(info[0]->ToObject());
+22:17:46.271  	                                                                                  ^
+22:17:46.271  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:46.272  	                 from ../src/addon.cc:1:
+22:17:46.272  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2822:44: note: candidate: v8::MaybeLocal<v8::Object> v8::Value::ToObject(v8::Local<v8::Context>) const
+22:17:46.272  	   V8_WARN_UNUSED_RESULT MaybeLocal<Object> ToObject(
+22:17:46.272  	                                            ^~~~~~~~
+22:17:46.272  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:2822:44: note:   candidate expects 1 argument, 0 provided
+22:17:46.332  	make: *** [Release/obj.target/keccak/src/addon.o] Error 1
+22:17:46.333  	make: Leaving directory `/vercel/path0/node_modules/@portis/web3/node_modules/keccak/build'
+22:17:46.334  	gyp ERR! build error 
+22:17:46.334  	gyp ERR! stack Error: `make` failed with exit code: 2
+22:17:46.334  	gyp ERR! stack     at ChildProcess.onExit (/node14/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:194:23)
+22:17:46.334  	gyp ERR! stack     at ChildProcess.emit (events.js:315:20)
+22:17:46.334  	gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+22:17:46.334  	gyp ERR! System Linux 4.14.225-168.357.amzn2.x86_64
+22:17:46.335  	gyp ERR! command "/node14/bin/node" "/node14/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+22:17:46.335  	gyp ERR! cwd /vercel/path0/node_modules/@portis/web3/node_modules/keccak
+22:17:46.335  	gyp ERR! node -v v14.16.1
+22:17:46.335  	gyp ERR! node-gyp -v v5.1.0
+22:17:46.335  	gyp ERR! not ok 
+22:17:46.342  	npm ERR! code ELIFECYCLE
+22:17:46.342  	npm ERR! errno 1
+22:17:46.344  	npm ERR! keccak@1.4.0 rebuild: `node-gyp rebuild`
+22:17:46.344  	npm ERR! Exit status 1
+22:17:46.346  	npm ERR! 
+22:17:46.346  	npm ERR! Failed at the keccak@1.4.0 rebuild script.
+22:17:46.346  	npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+22:17:46.354  	npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+22:17:46.354  	npm ERR! A complete log of this run can be found in:
+22:17:46.354  	npm ERR!     /vercel/.npm/_logs/2021-05-16T13_17_46_345Z-debug.log
+22:17:46.356  	Keccak bindings compilation fail. Pure JS implementation will be used.
+22:17:46.562  	> utf-8-validate@5.0.4 install /vercel/path0/node_modules/utf-8-validate
+22:17:46.562  	> node-gyp-build
+22:17:46.707  	> secp256k1@3.8.0 install /vercel/path0/node_modules/secp256k1
+22:17:46.707  	> npm run rebuild || echo "Secp256k1 bindings compilation fail. Pure JS implementation will be used."
+22:17:46.927  	> secp256k1@3.8.0 rebuild /vercel/path0/node_modules/secp256k1
+22:17:46.927  	> node-gyp rebuild
+22:17:47.315  	make: Entering directory `/vercel/path0/node_modules/secp256k1/build'
+22:17:47.315  	  CXX(target) Release/obj.target/secp256k1/src/addon.o
+22:17:47.900  	  CXX(target) Release/obj.target/secp256k1/src/privatekey.o
+22:17:48.344  	../src/privatekey.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE privateKeyNegate(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:48.344  	../src/privatekey.cc:73:30: warning: ignoring return value of ‘int secp256k1_ec_privkey_negate(const secp256k1_context*, unsigned char*)’, declared with attribute warn_unused_result [-Wunused-result]
+22:17:48.344  	   secp256k1_ec_privkey_negate(secp256k1ctx, &private_key[0]);
+22:17:48.344  	   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22:17:48.529  	  CXX(target) Release/obj.target/secp256k1/src/publickey.o
+22:17:49.142  	  CXX(target) Release/obj.target/secp256k1/src/signature.o
+22:17:49.647  	  CXX(target) Release/obj.target/secp256k1/src/ecdsa.o
+22:17:50.023  	../src/ecdsa.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE sign(Nan::NAN_METHOD_ARGS_TYPE)’:
+22:17:50.023  	../src/ecdsa.cc:88:131: warning: ignoring return value of ‘v8::Maybe<bool> v8::Object::Set(v8::Local<v8::Context>, v8::Local<v8::Value>, v8::Local<v8::Value>)’, declared with attribute warn_unused_result [-Wunused-result]
+22:17:50.024  	   obj->Set(info.GetIsolate()->GetCurrentContext(), Nan::New<v8::String>("signature").ToLocalChecked(), COPY_BUFFER(&output[0], 64));
+22:17:50.024  	                                                                                                                                   ^
+22:17:50.024  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:50.024  	                 from ../src/ecdsa.cc:1:
+22:17:50.024  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:3670:37: note: declared here
+22:17:50.024  	   V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+22:17:50.024  	                                     ^~~
+22:17:50.024  	../src/ecdsa.cc:89:130: warning: ignoring return value of ‘v8::Maybe<bool> v8::Object::Set(v8::Local<v8::Context>, v8::Local<v8::Value>, v8::Local<v8::Value>)’, declared with attribute warn_unused_result [-Wunused-result]
+22:17:50.024  	   obj->Set(info.GetIsolate()->GetCurrentContext(), Nan::New<v8::String>("recovery").ToLocalChecked(), Nan::New<v8::Number>(recid));
+22:17:50.024  	                                                                                                                                  ^
+22:17:50.024  	In file included from /vercel/.cache/node-gyp/14.16.1/include/node/node.h:67:0,
+22:17:50.024  	                 from ../src/ecdsa.cc:1:
+22:17:50.024  	/vercel/.cache/node-gyp/14.16.1/include/node/v8.h:3670:37: note: declared here
+22:17:50.024  	   V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+22:17:50.024  	                                     ^~~
+22:17:50.226  	  CXX(target) Release/obj.target/secp256k1/src/ecdh.o
+22:17:50.728  	  CC(target) Release/obj.target/secp256k1/src/secp256k1-src/src/secp256k1.o
+22:17:51.806  	  CC(target) Release/obj.target/secp256k1/src/secp256k1-src/contrib/lax_der_parsing.o
+22:17:51.870  	  CC(target) Release/obj.target/secp256k1/src/secp256k1-src/contrib/lax_der_privatekey_parsing.o
+22:17:51.925  	  SOLINK_MODULE(target) Release/obj.target/secp256k1.node
+22:17:51.978  	  COPY Release/secp256k1.node
+22:17:51.989  	make: Leaving directory `/vercel/path0/node_modules/secp256k1/build'
+22:17:52.028  	> @toruslabs/eccrypto@1.1.6 install /vercel/path0/node_modules/@toruslabs/eccrypto
+22:17:52.028  	> node-gyp rebuild || exit 0
+22:17:52.383  	make: Entering directory `/vercel/path0/node_modules/@toruslabs/eccrypto/build'
+22:17:52.384  	  CXX(target) Release/obj.target/ecdh/ecdh.o
+22:17:52.932  	  SOLINK_MODULE(target) Release/obj.target/ecdh.node
+22:17:52.982  	  COPY Release/ecdh.node
+22:17:52.991  	make: Leaving directory `/vercel/path0/node_modules/@toruslabs/eccrypto/build'
+22:17:53.206  	> husky@4.3.8 install /vercel/path0/node_modules/husky
+22:17:53.206  	> node husky install
+22:17:53.298  	husky > Setting up git hooks
+22:17:53.322  	CI detected, skipping Git hooks installation.
+22:17:53.323  	husky > Done
+22:17:53.451  	> core-js@3.11.1 postinstall /vercel/path0/node_modules/@commitlint/cli/node_modules/core-js
+22:17:53.452  	> node -e "try{require('./postinstall')}catch(e){}"
+22:17:53.682  	> core-js@2.6.12 postinstall /vercel/path0/node_modules/core-js
+22:17:53.682  	> node -e "try{require('./postinstall')}catch(e){}"
+22:17:53.758  	> core-js-pure@3.11.1 postinstall /vercel/path0/node_modules/core-js-pure
+22:17:53.758  	> node -e "try{require('./postinstall')}catch(e){}"
+22:17:53.858  	> ejs@2.7.4 postinstall /vercel/path0/node_modules/ejs
+22:17:53.858  	> node ./postinstall.js
+22:17:54.257  	> core-js@3.11.1 postinstall /vercel/path0/node_modules/react-app-polyfill/node_modules/core-js
+22:17:54.258  	> node -e "try{require('./postinstall')}catch(e){}"
+22:17:54.760  	> web3-bzz@1.3.5 postinstall /vercel/path0/node_modules/web3-bzz
+22:17:54.760  	> echo "WARNING: the web3-bzz api will be deprecated in the next version"
+22:17:54.778  	WARNING: the web3-bzz api will be deprecated in the next version
+22:17:54.799  	> web3-shh@1.3.5 postinstall /vercel/path0/node_modules/web3-shh
+22:17:54.799  	> echo "WARNING: the web3-shh api will be deprecated in the next version"
+22:17:54.814  	WARNING: the web3-shh api will be deprecated in the next version
+22:17:54.856  	> husky@4.3.8 postinstall /vercel/path0/node_modules/husky
+22:17:54.856  	> opencollective-postinstall || exit 0
+22:17:54.923  	> web3@1.3.5 postinstall /vercel/path0/node_modules/web3
+22:17:54.923  	> echo "WARNING: the web3-shh and web3-bzz api will be deprecated in the next version"
+22:17:54.940  	WARNING: the web3-shh and web3-bzz api will be deprecated in the next version
+22:17:57.329  	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+22:17:57.329  	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:17:57.343  	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+22:17:57.343  	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:17:57.359  	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+22:17:57.359  	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:17:57.396  	added 2979 packages from 1171 contributors in 47.686s
+22:17:59.504  	188 packages are looking for funding
+22:17:59.504  	  run `npm fund` for details
+22:17:59.735  	Running "npm run build"
+22:17:59.936  	> pearl-frontend@0.1.0 build /vercel/path0
+22:17:59.936  	> react-scripts build
+22:18:01.247  	Creating an optimized production build...
+22:20:21.117  	Treating warnings as errors because process.env.CI = true.
+22:20:21.117  	Most CI servers set it automatically.
+22:20:21.117  	Failed to compile.
+22:20:21.118  	src/App.tsx
+22:20:21.118  	  Line 2:35:  'Redirect' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.118  	src/config/constants/pools.ts
+22:20:21.118  	  Line 1:22:  'QuoteToken' is defined but never used    @typescript-eslint/no-unused-vars
+22:20:21.118  	  Line 1:34:  'PoolCategory' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.118  	src/contexts/Localisation/languageContext.tsx
+22:20:21.118  	  Line 33:7:  'fetchTranslationsForSelectedLanguage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+22:20:21.118  	  Line 60:7:  Unexpected console statement                                               no-console
+22:20:21.118  	src/state/hooks.ts
+22:20:21.118  	  Line 2:21:  'useMemo' is defined but never used                    @typescript-eslint/no-unused-vars
+22:20:21.118  	  Line 5:37:  'fetchPoolsPublicDataAsync' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.118  	src/uikit/widgets/Menu/icons/Logo.tsx
+22:20:21.118  	  Line 10:9:  'textColor' is assigned a value but never used  @typescript-eslint/no-unused-vars
+22:20:21.118  	src/views/Farms/Farms.tsx
+22:20:21.118  	  Line 1:8:   'styled' is defined but never used          @typescript-eslint/no-unused-vars
+22:20:21.118  	  Line 9:27:  'CAKE_PER_BLOCK' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.120  	  Line 9:43:  'CAKE_POOL_PID' is defined but never used   @typescript-eslint/no-unused-vars
+22:20:21.120  	src/views/Farms/components/FarmCard/CardActionsContainer.tsx
+22:20:21.120  	  Line 8:26:  'useFarmFromSymbol' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.120  	src/views/Farms/components/FarmCard/CardHeading.tsx
+22:20:21.120  	  Line 4:10:  'CommunityTag' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.120  	  Line 4:24:  'CoreTag' is defined but never used       @typescript-eslint/no-unused-vars
+22:20:21.120  	  Line 4:43:  'RiskTag' is defined but never used       @typescript-eslint/no-unused-vars
+22:20:21.120  	  Line 28:3:  'risk' is defined but never used          @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Farms/components/FarmCard/FarmCard.tsx
+22:20:21.121  	  Line 5:10:  'communityFarms' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Home/Home.tsx
+22:20:21.121  	  Line 67:15:  'setNum' is assigned a value but never used  @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Home/components/CakeHarvestBalance.tsx
+22:20:21.121  	  Line 4:8:  'BigNumber' is defined but never used       @typescript-eslint/no-unused-vars
+22:20:21.121  	  Line 6:8:  'useAllEarnings' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Home/components/CakeWalletBalance.tsx
+22:20:21.121  	  Line 4:8:   'useTokenBalance' is defined but never used   @typescript-eslint/no-unused-vars
+22:20:21.121  	  Line 6:10:  'getCakeAddress' is defined but never used    @typescript-eslint/no-unused-vars
+22:20:21.121  	  Line 7:10:  'getBalanceNumber' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Home/components/TotalValueLockedCard.tsx
+22:20:21.121  	  Line 3:35:  'Skeleton' is defined but never used     @typescript-eslint/no-unused-vars
+22:20:21.121  	  Line 5:10:  'useGetStats' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.121  	src/views/Home/components/TwitterCard.tsx
+22:20:21.121  	  Line 2:35:   'Text' is defined but never used              @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 3:8:    'BigNumber' is defined but never used         @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 6:10:   'getBalanceNumber' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 7:10:   'useTotalSupply' is defined but never used    @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 7:26:   'useBurnedBalance' is defined but never used  @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 9:10:   'getCakeAddress' is defined but never used    @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 10:8:   'CardValue' is defined but never used         @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 11:10:  'useFarms' is defined but never used          @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 18:7:   'Row' is assigned a value but never used      @typescript-eslint/no-unused-vars
+22:20:21.122  	src/views/Referral/Referral.tsx
+22:20:21.122  	  Line 3:19:   'Text' is defined but never used                      @typescript-eslint/no-unused-vars
+22:20:21.122  	  Line 32:11:  'TranslateString' is assigned a value but never used  @typescript-eslint/no-unused-vars
+22:20:21.254  	npm ERR! code ELIFECYCLE
+22:20:21.255  	npm ERR! errno 1
+22:20:21.257  	npm ERR! pearl-frontend@0.1.0 build: `react-scripts build`
+22:20:21.257  	npm ERR! Exit status 1
+22:20:21.257  	npm ERR! 
+22:20:21.258  	npm ERR! Failed at the pearl-frontend@0.1.0 build script.
+22:20:21.258  	npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+22:20:21.262  	npm ERR! A complete log of this run can be found in:
+22:20:21.262  	npm ERR!     /vercel/.npm/_logs/2021-05-16T13_20_21_258Z-debug.log
+22:20:21.274  	Error: Command "npm run build" exited with 1
